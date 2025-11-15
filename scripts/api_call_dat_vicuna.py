@@ -26,13 +26,14 @@ strategies = {
 }
 
 from llama_cpp import Llama
+import random
 
 # download the model file from https://huggingface.co/TheBloke/gpt4-x-vicuna-13B-GGML/resolve/main/gpt4-x-vicuna-13B.ggml.q8_0.bin before running this
-llm = Llama(model_path="models/gpt4-x-vicuna-13B-GGML/gpt4-x-vicuna-13B.ggml.q8_0.bin", use_mmap=False)
+llm = Llama(model_path="models/gpt4-x-vicuna-13B-GGML/gpt4-x-vicuna-13B.ggml.q8_0.bin", use_mmap=False, seed=random.randint(0, 1000000))
 
 def generate_response(dat_prompt, temp):
     prompt = f"### Instruction: {dat_prompt}\n### Response: "
-    output = llm(prompt, max_tokens=100, temperature=temp)
+    output = llm(prompt, max_tokens=250, temperature=temp)
     llm.reset()
     return output["choices"][0]["text"].strip()
 
@@ -56,7 +57,7 @@ def main(filename, file_path="./", strategy="none", temp=None, iter_nb="0"):
     """
     logger = logging.getLogger(__name__)
     output = {}
-    for iterat in range(0, 500):
+    for iterat in range(0, 1000):
         logger.info(f"API CALL NUMBER {iterat} \n {'~'*80}")
         try:
             response = generate_response(strategies[strategy], temp)
