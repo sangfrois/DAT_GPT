@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# DAT_GPT
-Exploration of Divergent Association Task using chat-GPT
-=======
 # Divergent Creativity in Humans and Large Language Models
 
 This repository contains the code and data for the paper ["Divergent Creativity in Humans and Large Language Models"](https://arxiv.org/abs/2405.13012).
@@ -44,6 +40,3 @@ To run the code in this repository, first install the requirements:
 ```pip install -r requirements.txt```
 
 and open the notebooks in your favorite editor.
-
-
->>>>>>> upstream/main
