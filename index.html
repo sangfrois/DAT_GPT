@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divergent Creativity in Humans and Large Language Models</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">DAT × LLMs</div>
+            <ul class="nav-menu">
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#findings">Findings</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="https://arxiv.org/abs/2405.13012" target="_blank" class="cta-link">Read Paper</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Divergent Creativity in Humans and Large Language Models</h1>
+            <p class="hero-subtitle">A computational creativity showdown between humans and AI</p>
+            <div class="hero-buttons">
+                <a href="https://arxiv.org/abs/2405.13012" target="_blank" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    Read Paper
+                </a>
+                <a href="https://github.com/sangfrois/DAT_GPT" target="_blank" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    View Code
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="abstract" class="section">
+            <div class="container">
+                <h2 class="section-title">Abstract</h2>
+                <div class="abstract-content">
+                    <p class="abstract-text">
+                        In a computational creativity showdown, some LLMs top humans in generating diverse words
+                        but fall short in writing stories and poetry. The size of generative language models does
+                        not matter, plus humans still write more divergent haikus and synopses.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="findings" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Key Findings</h2>
+                <div class="findings-grid">
+                    <div class="finding-card">
+                        <div class="finding-icon">📊</div>
+                        <h3>Word Generation</h3>
+                        <p>LLMs outperform humans in generating semantically diverse word associations in the Divergent Association Task.</p>
+                    </div>
+                    <div class="finding-card">
+                        <div class="finding-icon">✍️</div>
+                        <h3>Creative Writing</h3>
+                        <p>Humans maintain superiority in writing divergent haikus and synopses, showcasing deeper creative expression.</p>
+                    </div>
+                    <div class="finding-card">
+                        <div class="finding-icon">📏</div>
+                        <h3>Model Size</h3>
+                        <p>Surprisingly, the size of language models does not correlate with creative performance across tasks.</p>
+                    </div>
+                    <div class="finding-card">
+                        <div class="finding-icon">🎭</div>
+                        <h3>Task Complexity</h3>
+                        <p>LLMs excel at structured tasks but struggle with open-ended creative challenges requiring nuanced expression.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="methodology" class="section">
+            <div class="container">
+                <h2 class="section-title">Methodology</h2>
+                <div class="methodology-grid">
+                    <div class="method-card">
+                        <div class="method-number">01</div>
+                        <h3>Divergent Association Task (DAT)</h3>
+                        <p>Participants generate 10 words as different from each other as possible. Semantic distance is measured using word embeddings.</p>
+                        <div class="method-stats">
+                            <span class="stat-badge">100,000 human participants</span>
+                            <span class="stat-badge">>500 responses per model</span>
+                        </div>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-number">02</div>
+                        <h3>Divergent Semantic Integration (DSI)</h3>
+                        <p>Analyzes haiku and flash fiction creativity by measuring how diverse concepts are integrated into coherent narratives.</p>
+                        <div class="method-stats">
+                            <span class="stat-badge">Multiple LLMs tested</span>
+                            <span class="stat-badge">Human baselines</span>
+                        </div>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-number">03</div>
+                        <h3>Synopsis Generation</h3>
+                        <p>Human-written synopses scraped from IMDB compared against LLM-generated content for creativity metrics.</p>
+                        <div class="method-stats">
+                            <span class="stat-badge">Real-world data</span>
+                            <span class="stat-badge">Lempel-Ziv complexity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="data" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Data & Code</h2>
+                <div class="data-content">
+                    <p class="data-intro">
+                        All data and code used in this study are publicly available on GitHub.
+                        Explore the datasets, reproduce our findings, or build upon our work.
+                    </p>
+                    <div class="data-grid">
+                        <div class="data-card">
+                            <h4>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                Human Data
+                            </h4>
+                            <ul>
+                                <li><strong>DAT:</strong> 100,000 human participants</li>
+                                <li><strong>Synopses:</strong> Human-written IMDB data</li>
+                                <li><strong>Creative Writing:</strong> Haikus and stories</li>
+                            </ul>
+                        </div>
+                        <div class="data-card">
+                            <h4>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                                Machine Data
+                            </h4>
+                            <ul>
+                                <li><strong>DAT:</strong> >500 responses per LLM</li>
+                                <li><strong>DSI:</strong> Haiku & flash fiction analysis</li>
+                                <li><strong>Models:</strong> Multiple open & closed-source LLMs</li>
+                            </ul>
+                        </div>
+                        <div class="data-card">
+                            <h4>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                                Code
+                            </h4>
+                            <ul>
+                                <li><strong>Notebooks:</strong> Reproducible visualizations</li>
+                                <li><strong>Scripts:</strong> DAT & DSI computation</li>
+                                <li><strong>API calls:</strong> LLM inference code</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="data-buttons">
+                        <a href="https://github.com/sangfrois/DAT_GPT" target="_blank" class="btn btn-primary">
+                            Explore on GitHub
+                        </a>
+                        <a href="https://arxiv.org/abs/2405.13012" target="_blank" class="btn btn-outline">
+                            Read Full Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section citation">
+            <div class="container">
+                <h2 class="section-title">Citation</h2>
+                <div class="citation-box">
+                    <pre><code>@article{bellemare2024divergent,
+  title={Divergent Creativity in Humans and Large Language Models},
+  author={Bellemare, Antoine and Sangfrois, Francois and others},
+  journal={arXiv preprint arXiv:2405.13012},
+  year={2024}
+}</code></pre>
+                    <button class="copy-btn" onclick="copyToClipboard()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        Copy
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <p>Exploring the boundaries of creativity between humans and artificial intelligence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://arxiv.org/abs/2405.13012" target="_blank">Paper</a></li>
+                        <li><a href="https://github.com/sangfrois/DAT_GPT" target="_blank">GitHub</a></li>
+                        <li><a href="#abstract">Abstract</a></li>
+                        <li><a href="#findings">Findings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>For questions about this research, please open an issue on GitHub or contact the authors.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DAT × LLMs Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
