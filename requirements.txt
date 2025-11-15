@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pyChatGPT
 click
 twocaptcha
@@ -8,3 +9,25 @@ seaborn
 scipy
 dat
 anthropic
+=======
+#pyChatGPT
+#Bard
+click
+numpy
+openai
+seaborn
+scipy
+anthropic
+torch
+transformers
+scikit-learn
+matplotlib
+nltk
+einops
+accelerate
+google-generativeai
+llama-cpp-python
+jupyter
+statsmodels
+pingouin
+>>>>>>> upstream/main

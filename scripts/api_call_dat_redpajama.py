@@ -28,8 +28,15 @@ strategies = {
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, StoppingCriteria, StoppingCriteriaList
 
+<<<<<<< HEAD
 tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-Chat-3B-v1", cache_dir="models/")
 model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-Chat-3B-v1", cache_dir="models/", torch_dtype=torch.float16)
+=======
+# tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-Chat-3B-v1", cache_dir="models/")
+# model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-Chat-3B-v1", cache_dir="models/", torch_dtype=torch.float16)
+tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-Chat-7B-v0.1", cache_dir="models/")
+model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-Chat-7B-v0.1", cache_dir="models/", torch_dtype=torch.float16)
+>>>>>>> upstream/main
 model.cuda()
 
 def generate_response(dat_prompt, temp):
