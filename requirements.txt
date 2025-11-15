@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-pyChatGPT
-click
-twocaptcha
-numpy
-dat
-openai
-seaborn
-scipy
-dat
-anthropic
-=======
 #pyChatGPT
 #Bard
 click
@@ -30,4 +18,3 @@ llama-cpp-python
 jupyter
 statsmodels
 pingouin
->>>>>>> upstream/main

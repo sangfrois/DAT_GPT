@@ -8,12 +8,7 @@ warnings.filterwarnings('ignore')
 
 import anthropic
 NOTHING="Make a list of 10 words"
-<<<<<<< HEAD
-YOUNG_NO="Please enter 10 words that are as different from each other as possible, in all meanings and uses of the words. Answer from the perspective of a child. Rules: Only single words in English. Only nouns (e.g., things, objects, concepts). No proper nouns (e.g., no specific people or places). No specialised vocabulary (e.g., no technical terms). Think of the words on your own (e.g., do not just look at objects in your surroundings).  Make a list of these 10 words, a single word in each entry of the list."
-NO_STRATEGY="Please enter 10 words that are as different from each other as possible, in all meanings and uses of the words. Rules: Only single words in English. Only nouns (e.g., things, objects, concepts). No proper nouns (e.g., no specific people or places). No specialised vocabulary (e.g., no technical terms). Think of the words on your own (e.g., do not just look at objects in your surroundings).  Make a list of these 10 words, a single word in each entry of the list."
-=======
 NO_STRATEGY="Please enter 10 words that are as different from each other as possible, in all meanings and uses of the words. Rules: Only single words in English. Only nouns (e.g., things, objects, concepts). No proper nouns (e.g., no specific people or places). No specialised vocabulary (e.g., no technical terms). Think of the words on your own (e.g., do not just look at objects in your surroundings).  Make a list of these 10 words, a single word in each entry of the list. ONLY WRITE THE LIST NOTHING MORE."
->>>>>>> upstream/main
 
 STRATEGY_THE="Please enter 10 words that are as different from each other as possible, in all meanings and uses of the words, using a strategy that relies on using a thesaurus. Rules: Only single words in English. Only nouns (e.g., things, objects, concepts). No proper nouns (e.g., no specific people or places). No specialised vocabulary (e.g., no technical terms). Think of the words on your own (e.g., do not just look at objects in your surroundings). Make a list of these 10 words, a single word in each entry of the list."
 
@@ -23,28 +18,12 @@ STRATEGY_OPP="Please enter 10 words that are as different from each other as pos
 
 STRATEGY_RAND="Please enter 10 words that are as different from each other as possible, in all meanings and uses of the words, using a strategy that relies on randomness. Rules: Only single words in English. Only nouns (e.g., things, objects, concepts). No proper nouns (e.g., no specific people or places). No specialised vocabulary (e.g., no technical terms). Think of the words on your own (e.g., do not just look at objects in your surroundings). Make a list of these 10 words, a single word in each entry of the list."
 strategies = {"nothing":NOTHING,
-<<<<<<< HEAD
-              "young":YOUNG_NO,
-=======
->>>>>>> upstream/main
               "none":NO_STRATEGY,
               "etymology":STRATEGY_ETYM,
               "random":STRATEGY_RAND,
               "opposites":STRATEGY_OPP,
               "thesaurus":STRATEGY_THE}
 # keys
-<<<<<<< HEAD
-anthropic.api_key = "sk-ant-C9z6Ea1-M-ITXRetrDmc4cYHJVh6PrEnlwvjdKmtFuU7L1-5sfk021GAHOYwxG_l2VOR-AXazlnRH9PXo1ngSQ" # add your key here
-
-def generate_response(text, temp):
-    client = anthropic.Client(anthropic.api_key)
-    if temp is None:
-        temp = 0.7
-    response = client.completion(prompt=f"{anthropic.HUMAN_PROMPT} {text} {anthropic.AI_PROMPT}",
-                                 model="claude-v1", stop_sequences = [anthropic.HUMAN_PROMPT],
-                                 temperature=temp, max_tokens_to_sample=100,)
-    return response['completion']
-=======
 api_key = "" # add your key here
 client = anthropic.Anthropic(api_key=api_key)
 def generate_response(text, temp):
@@ -54,7 +33,6 @@ def generate_response(text, temp):
                                       temperature=temp,
                                       max_tokens=80)
     return response.content[0].text
->>>>>>> upstream/main
 
 @click.command()
 @click.argument("filename", type=str)  

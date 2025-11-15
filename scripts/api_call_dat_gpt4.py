@@ -1,9 +1,5 @@
 import os
-<<<<<<< HEAD
-import openai
-=======
 from openai import OpenAI
->>>>>>> upstream/main
 import time
 import json
 import click
@@ -29,14 +25,6 @@ strategies = {"nothing":NOTHING,
               "opposites":STRATEGY_OPP,
               "thesaurus":STRATEGY_THE}
 # keys
-<<<<<<< HEAD
-openai.organization = "org-mQ56VzDhHkSj8tfM9HJ9DXVq"
-openai.api_key = "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"
-
-def generate_response(text, temp):
-    response = openai.ChatCompletion.create(model='gpt-4-0314', messages=[{"role":'assistant', "content":text}], temperature=temp)
-    return response['choices'][0]["message"]["content"].strip()
-=======
 client = OpenAI()
 def generate_response(text, temp):
 
@@ -47,7 +35,6 @@ def generate_response(text, temp):
         temperature=temp
     )
     return completion.choices[0].message.content.strip()
->>>>>>> upstream/main
 
 @click.command()
 @click.argument("filename", type=str)
@@ -68,11 +55,7 @@ def main(filename, file_path="./", strategy='none',temp=None, iter_nb='0'):
     """
     logger = logging.getLogger(__name__)
     output = {}
-<<<<<<< HEAD
-    for iterat in range(0, 200):
-=======
     for iterat in range(0, 500):
->>>>>>> upstream/main
         logger.info(f"API CALL NUMBER {iterat} \n{'~'*80}")
         try:
             response = generate_response(strategies[strategy], temp)
@@ -81,17 +64,10 @@ def main(filename, file_path="./", strategy='none',temp=None, iter_nb='0'):
             with open(f"{file_path}{filename}_temp{temp}_{strategy}{iter_nb}.json", "w") as outfile:
                 json.dump(output, outfile)
         except:
-<<<<<<< HEAD
-            logger.info(f"API CALL NUMBER {iterat} FAILED; waiting 1h\n{'~'*80}")
-            time.sleep(3600)
-            continue
-        time.sleep(3)
-=======
             logger.info(f"API CALL NUMBER {iterat} FAILED; waiting 30s\n{'~'*80}")
             time.sleep(30)
             continue
         time.sleep(1)
->>>>>>> upstream/main
     logger.info(f"done \n {'-'*80}")
 
 if __name__ == "__main__":
