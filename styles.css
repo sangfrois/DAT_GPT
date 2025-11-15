@@ -487,6 +487,13 @@ code, pre {
     gap: 1rem;
 }
 
+.copy-citation-btn {
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .citation-link {
     display: inline-block;
     padding: 0.75rem 1.5rem;

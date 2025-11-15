@@ -43,11 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (citationBox) {
         const copyButton = document.createElement('button');
         copyButton.innerHTML = '📋 Copy Citation';
-        copyButton.className = 'btn btn-small';
-        copyButton.style.marginTop = '1rem';
-        copyButton.style.display = 'block';
-        copyButton.style.marginLeft = 'auto';
-        copyButton.style.marginRight = 'auto';
+        copyButton.className = 'btn btn-small copy-citation-btn';
         
         copyButton.addEventListener('click', function() {
             const citation = citationBox.querySelector('code').textContent;
@@ -85,12 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
     });
-    
-    // Mobile menu toggle (for future enhancement)
-    const navBrand = document.querySelector('.nav-brand');
-    if (navBrand && window.innerWidth <= 768) {
-        navBrand.style.cursor = 'pointer';
-    }
 });
 
 // Add loading state
