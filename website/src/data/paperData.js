@@ -3,7 +3,7 @@ export const paperMetadata = {
   title: "Divergent Creativity in Humans and Large Language Models",
   authors: ["Bellemare-Lespinasse", "et al."],
   arxivLink: "https://arxiv.org/abs/2405.13012",
-  abstract: `In a computational creativity showdown, some LLMs top humans in generating diverse words but falls short in writing stories and poetry. The size of generative language models does not matter, plus humans still write more divergent haikus and synopses.`,
+  abstract: `In a computational creativity showdown, some LLMs top humans in generating diverse words but fall short in writing stories and poetry. The size of generative language models does not matter, plus humans still write more divergent haikus and synopses.`,
 };
 
 export const scrollSections = [

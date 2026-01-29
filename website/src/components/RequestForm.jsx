@@ -69,8 +69,10 @@ This request was submitted via the DAT Companion Website.
 Please verify the model configuration and trigger the evaluation pipeline.
 `);
     
-    // Open mailto link
-    window.location.href = `mailto:dat-competition@example.com?subject=${subject}&body=${body}`;
+    // Open mailto link - uses placeholder that should be configured for production
+    // The email address can be changed in vite.config.js using VITE_CONTACT_EMAIL environment variable
+    const contactEmail = import.meta.env.VITE_CONTACT_EMAIL || 'dat-research@example.com';
+    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
     
     // Simulate success after a moment
     setTimeout(() => {
