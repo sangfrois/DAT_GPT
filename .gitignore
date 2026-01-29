@@ -4,3 +4,8 @@ samples/
 samples/*
 scripts/__pycache__/*
 ./*.json
+
+# Website
+website/node_modules/
+website/dist/
+website/.vite/

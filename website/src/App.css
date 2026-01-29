@@ -1,0 +1,16 @@
+/* App-specific styles */
+#root {
+  width: 100%;
+}
+
+/* Ensure smooth page transitions */
+.app {
+  position: relative;
+}
+
+/* Mobile navigation toggle (for future enhancement) */
+@media (max-width: 600px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+}
