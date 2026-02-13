@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Divergent Creativity in Humans and Large Language Models - Research Companion Website">
+    <title>Divergent Creativity in Humans and LLMs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">DAT-GPT Research</div>
+            <ul class="nav-links">
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#findings">Findings</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#data">Data & Code</a></li>
+                <li><a href="#citation">Citation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Divergent Creativity in Humans and Large Language Models</h1>
+                <p class="hero-subtitle">A Computational Creativity Showdown</p>
+                <div class="hero-buttons">
+                    <a href="https://arxiv.org/abs/2405.13012" class="btn btn-primary" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        Read Paper
+                    </a>
+                    <a href="https://github.com/sangfrois/DAT_GPT" class="btn btn-secondary" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="abstract" class="section">
+            <div class="container">
+                <h2 class="section-title">Abstract</h2>
+                <div class="content-card">
+                    <p class="large-text">
+                        In a computational creativity showdown, some LLMs top humans in generating diverse words 
+                        but fall short in writing stories and poetry. The size of generative language models does 
+                        not matter, plus humans still write more divergent haikus and synopses.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="findings" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Key Findings</h2>
+                <div class="findings-grid">
+                    <div class="finding-card">
+                        <div class="finding-icon">📊</div>
+                        <h3>Word Generation Task (DAT)</h3>
+                        <p>Large Language Models demonstrate superior performance in the Divergent Association Task, 
+                           generating more semantically diverse word associations than human participants across 
+                           100,000+ responses.</p>
+                    </div>
+                    <div class="finding-card">
+                        <div class="finding-icon">✍️</div>
+                        <h3>Creative Writing</h3>
+                        <p>Humans maintain an edge in creative writing tasks, producing more divergent haikus and 
+                           story synopses compared to LLMs, demonstrating the nuanced nature of literary creativity.</p>
+                    </div>
+                    <div class="finding-card">
+                        <div class="finding-icon">📈</div>
+                        <h3>Model Size Independence</h3>
+                        <p>Surprisingly, the size of the language model does not correlate with creativity performance, 
+                           suggesting that architectural choices and training data matter more than parameter count.</p>
+                    </div>
+                    <div class="finding-card">
+                        <div class="finding-icon">🧩</div>
+                        <h3>Divergent Semantic Integration</h3>
+                        <p>Analysis using the DSI metric reveals distinct patterns in how humans and LLMs combine 
+                           semantic concepts, with implications for understanding computational creativity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="methodology" class="section">
+            <div class="container">
+                <h2 class="section-title">Methodology</h2>
+                <div class="methodology-content">
+                    <div class="method-card">
+                        <h3>🎯 Divergent Association Task (DAT)</h3>
+                        <p>The DAT measures semantic distance between generated words. We collected responses from:</p>
+                        <ul>
+                            <li><strong>100,000+ human participants</strong> providing baseline creativity measures</li>
+                            <li><strong>500+ responses per LLM model</strong> across various architectures</li>
+                            <li>Multiple state-of-the-art models including GPT-3.5, GPT-4, Claude, and open-source alternatives</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="method-card">
+                        <h3>📝 Creative Writing Tasks</h3>
+                        <p>We evaluated creativity across multiple literary forms:</p>
+                        <ul>
+                            <li><strong>Haiku generation</strong> - Traditional 5-7-5 syllable structure</li>
+                            <li><strong>Flash fiction</strong> - Ultra-short story format</li>
+                            <li><strong>Story synopses</strong> - Human data scraped from IMDB</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="method-card">
+                        <h3>🔬 Divergent Semantic Integration (DSI)</h3>
+                        <p>The DSI metric quantifies how diverse semantic concepts are integrated:</p>
+                        <ul>
+                            <li>Based on semantic embedding distances (GloVe, Word2Vec)</li>
+                            <li>Lempel-Ziv complexity analysis for linguistic patterns</li>
+                            <li>Cross-validated with human creativity ratings</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="visualization-container">
+                        <h3>Sample Visualization</h3>
+                        <img src="figures/DAT_chat-GPT_2.png" alt="DAT Analysis Visualization" class="visualization-image">
+                        <p class="image-caption">Divergent Association Task results comparing human and LLM performance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="data" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Data & Code</h2>
+                <div class="data-grid">
+                    <div class="data-card">
+                        <h3>📁 Datasets</h3>
+                        <ul class="data-list">
+                            <li><code>human_data_dat/</code> - 100,000 human DAT responses</li>
+                            <li><code>human_data_synopsis/</code> - Human-written story synopses from IMDB</li>
+                            <li><code>machine_data_dat/</code> - LLM responses on DAT (500+ per model)</li>
+                            <li><code>machine_data_stories/</code> - LLM-generated creative writing samples</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="data-card">
+                        <h3>💻 Code</h3>
+                        <ul class="data-list">
+                            <li><code>notebook/dat_visualization.ipynb</code> - Main DAT analysis figures</li>
+                            <li><code>notebook/dsi_visualization.ipynb</code> - DSI metric visualizations</li>
+                            <li><code>scripts/</code> - API calls, local inference, and metric computations</li>
+                        </ul>
+                        <a href="https://github.com/sangfrois/DAT_GPT" class="btn btn-small" target="_blank">
+                            Explore Repository →
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="content-card tech-stack">
+                    <h3>Technical Stack</h3>
+                    <div class="tech-tags">
+                        <span class="tag">Python 3.10.8</span>
+                        <span class="tag">Jupyter Notebooks</span>
+                        <span class="tag">OpenAI API</span>
+                        <span class="tag">Anthropic Claude</span>
+                        <span class="tag">Hugging Face Transformers</span>
+                        <span class="tag">GloVe Embeddings</span>
+                        <span class="tag">Lempel-Ziv Complexity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="citation" class="section">
+            <div class="container">
+                <h2 class="section-title">Citation</h2>
+                <div class="citation-card">
+                    <p class="citation-instruction">If you use this work in your research, please cite:</p>
+                    <div class="citation-box">
+                        <pre><code>@misc{sangfrois2024divergent,
+  title={Divergent Creativity in Humans and Large Language Models},
+  author={Sangfrois, François et al.},
+  journal={arXiv preprint arXiv:2405.13012},
+  year={2024},
+  url={https://arxiv.org/abs/2405.13012}
+}</code></pre>
+                    </div>
+                    <div class="citation-links">
+                        <a href="https://arxiv.org/abs/2405.13012" class="citation-link" target="_blank">
+                            arXiv:2405.13012
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 DAT-GPT Research Project</p>
+                <div class="footer-links">
+                    <a href="https://github.com/sangfrois/DAT_GPT" target="_blank">GitHub</a>
+                    <a href="https://arxiv.org/abs/2405.13012" target="_blank">arXiv</a>
+                    <a href="https://github.com/sangfrois/DAT_GPT/blob/main/LICENSE" target="_blank">License</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
